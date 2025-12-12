@@ -2,7 +2,7 @@ import random
 kelime_secenekleri = ["Bilgisayar", "Telefon", "Yazılım", "Matematik"]
 kelime = random.choice(kelime_secenekleri).lower()
 tahmin_edilen = ["_"] * len(kelime)
-can = 7
+can = 3
 print("Adam Asmaca oyununa hoş geldiniz. Toplamda 3 yanlış harf hakkınız bulunmaktadır. Lütfen sadece 1 harf giriniz!")
 print("".join(tahmin_edilen))
 while "_" in tahmin_edilen and can > 0 :
@@ -23,4 +23,5 @@ if can==0:
     print("Oyunu kaybettiniz. Doğru kelime : ", kelime)
 else:
     print("Oyunu kazandınız . ", kelime)
+
 
